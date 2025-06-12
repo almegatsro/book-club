@@ -7,69 +7,113 @@
 </head>
 <body>
     <!-- heading -->
-     <h1>MT camel book club</h1>
+     <header>
+        <h1>MT camel book club</h1>
+     </header>
+     <nav>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ONLINE RESOURES</a></li>
+            <li><a href="">READING GROUP</a></li>
+            <li><a href="">CONTANT US</a></li>
+        </ul>
+     </nav>
      <!-- intro -->
-      <img src="MM/BOOKYS.jpg" alt="list of books" width="300">
-    <h2>welcome to MT camel book club</h2>
-    <p>the MTCBC is a online web for reader,researcher,E.T.C</p>
+      <div id="intro">
+        <img src="MM/BOOKYS.jpg" alt="list of books" width="300">
+        <h2>welcome to MT camel book club</h2>
+        <p>the MTCBC is a online web for reader,researcher,E.T.C</p>
+      </div>
     <!-- CONTENT 1 -->
-     <H2>Meet our teacher</H2>
-     <img src="MM/T1.jpg" alt="MR nickson" width="100">
-     <h3>HR.nickson</h3>
-     <P>mr.nickson is a G5 class teacher,he teachs math,science and P.H.E</P>
-     <img src="MM/T2.jpg" alt="mrs mary" width="100">
-    <h3>HR.mary</h3>
-    <P>mr.mary is a G5 class teacher,he teachs math,science and P.H.E</P>
+     <div id="main-section">
+        <div class="main-section-content">
+            <H2>Meet our teacher</H2>
+            <div id="teachers">
+                <div class="teacher-info">
+                    <div>
+                        <img src="MM/T1.jpg" alt="MR nickson" width="100">
+                    </div>
+                    <div>
+                        <h3>HR.nickson</h3>
+                        <P>mr.nickson is a G5 class teacher,he teachs math,science and P.H.E</P>
+                    </div>
+                </div>
+                <div class="teacher-info">
+                    <div>
+                        <img src="MM/T2.jpg" alt="MR nickson" width="100">
+                    </div>
+                    <div>
+                        <h3>HR.mary</h3>
+                        <P>mr.nickson is a G5 class teacher,he teachs math,science and P.H.E</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
     <!-- CONTENT 2 -->
-     <h2>book review</h2>
-     <h3>the invisible dog</h3>
-     <p><strong>elisa: </strong> <q>I love the book,it shown me to be honest and to be true to myself</q></p>
-    <p><strong>osongo: </strong> <q>I love the book </q></p>
+     <div class="main-section-content" id="book-reveiws">
+        <h2>book review</h2>
+        <h3>the invisible dog</h3>
+        <p><strong>elisa: </strong> <q>I love the book,it shown me to be honest and to be true to myself</q></p>
+        <p><strong>osongo: </strong> <q>I love the book </q>
+            </p>
+     </div>
     <!-- this is video section  -->
-     <video controls autoplay width="400" height="220">
-        <source src="MM/VIDEO.mp4" type="video/mp4">
-     </video>
-     <iframe src="https://www.youtube.com/embed/wcWLKRXgjsw" frameborder="0" width="400" height="220"></iframe>
+     <div class="main-content-section" id="videos">
+        <video controls autoplay width="400" height="220">
+            <source src="MM/VIDEO.mp4" type="video/mp4">
+        </video>
+        <iframe src="https://www.youtube.com/embed/wcWLKRXgjsw" frameborder="0" width="400" height="220"></iframe>
+     </div>
     <!-- CONTENT 3 <table></table> -->
-     <h2>open timing</h2>
-     <table>
-        <tr>
-            <th>monday</th>
-            <td>11:00AM - 3:00PM</td>
-        </tr>
-        <tr>
-            <th>tuesday</th>
-            <td>11:00AM - 3:00PM</td>
-        </tr>
-        <tr>
-            <th>wednesday</th>
-            <td>11:00AM - 3:00PM</td>
-        </tr>
-        <tr>
-            <th>thusday</th>
-            <td>11:00AM - 3:00PM</td>
-        </tr>
-        <tr>
-            <th>friday</th>
-            <td>11:00AM - 1:00PM</td>
-        </tr><tr>
-            <th>satarday</th>
-            <td>11:00AM - 1:00PM</td>
-        </tr><tr>
-            <th>sunday</th>
-            <td>CLOSED</td>
-        </tr>
-     </table>
+     <div class="main-section-content">
+        <h2>open timing</h2>
+        <table>
+            <tr>
+                <th>monday</th>
+                <td>11:00AM - 3:00PM</td>
+            </tr>
+            <tr>
+                <th>tuesday</th>
+                <td>11:00AM - 3:00PM</td>
+            </tr>
+            <tr>
+                <th>wednesday</th>
+                <td>11:00AM - 3:00PM</td>
+            </tr>
+            <tr>
+                <th>thusday</th>
+                <td>11:00AM - 3:00PM</td>
+            </tr>
+            <tr>
+                <th>friday</th>
+                <td>11:00AM - 1:00PM</td>
+            </tr>
+            <tr>
+                <th>satarday</th>
+                <td>11:00AM - 1:00PM</td>
+            </tr>
+            <tr>
+                <th>sunday</th>
+                <td>CLOSED</td>
+            </tr>
+            </table>
+     </div>
     <!-- bestseller section -->
-     <h2>best seller</h2>
-     <Ol>
-        <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-        <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-        <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-       <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-     </Ol>
+     <div id="bestsellers">
+        <h2>best seller</h2>
+        <Ol>
+            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
+            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
+            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
+            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
+            </Ol>
+     </div>
     <!-- contact info -->
-     <p> contact us: king kigen </p>
-     <p>phone number: 0777414124</p>
-     <address>kisumu,maboleo</address>
+     <footer>
+        <p><span>contact us:</span>  king kigen </p>
+        <p><span>phone number:</span> 0777414124</p>
+        <address>kisumu,maboleo</address>
+     </footer>
+     <button>enquiry</button>
 </html>
