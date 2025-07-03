@@ -16,6 +16,8 @@
             position: sticky;
             top: 0;
             z-index: 2;
+            display: flex;
+            justify-content: center;
         }
         #intro{
             background-color: lightpink;
@@ -77,6 +79,9 @@
             margin: 10px;
             width: 400px;
             box-shadow: 6px 0px 21px -3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         button{
             background-color: greenyellow;
@@ -137,6 +142,24 @@
         left: 40px; 
         width: 400px;
         }
+        footer{
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #videos div{
+            display: flex;
+            justify-content: space-around;
+        }
+        #teachers{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+            justify-content:space-between;
+        }
     </style>
 </head>
 <body>
@@ -194,10 +217,12 @@
      </div>
     <!-- this is video section  -->
      <div class="main-content-section" id="videos">
-        <video controls autoplay width="400" height="220">
-            <source src="MM/VIDEO.mp4" type="video/mp4">
-        </video>
-        <iframe src="https://www.youtube.com/embed/wcWLKRXgjsw" frameborder="0" width="400" height="220"></iframe>
+        <div>
+            <video controls autoplay width="400" height="220">
+                <source src="MM/VIDEO.mp4" type="video/mp4">
+            </video>
+            <iframe src="https://www.youtube.com/embed/wcWLKRXgjsw" frameborder="0" width="400" height="220"></iframe>
+        </div>
      </div>
     <!-- CONTENT 3 <table></table> -->
      <div class="main-section-content">
