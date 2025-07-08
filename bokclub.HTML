@@ -1,278 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My book club</title>
+    <meta charset="utf-8">
+    <title>Mount Caramel Book Club</title>
+    <link rel='stylesheet' href='style.css' type="text/css">
     <style>
-        body{
-            background-color: #333333;
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+        * {
+
+
+            font-family: "Parkinsans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+
         }
-        header{
-            background-color:brown;
-        }
-        nav{ 
-            background-color: aquamarine;
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-        }
-        #intro{
-            background-color: lightpink;
-            font-family: Arial, Helvetica, sans-serif;
+
+        #header {
             text-align: center;
         }
-        .main-section-content h2{
-            background-color: darkkhaki;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 5px;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        #bestsellers,
-        footer{
-            background-color: lightyellow;
-        }
-        header,
-        nav,
-        #intro,
-        #main-section,
-        #bestsellers,
-        footer{
-            border: 1px solid black;
-        }
-        header,
-        nav,
-        #main-section{
-            border-radius: 10px;
-        }
-        header h1{
-            color: white;
-            font-size: 50px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 30px;
-        }
-        h2,
-        p{
-            color: #333333;
-        }
-        table,
-        th,
-        td{
-            border: 2px solid black;
-        }
-        tr:last-child{
-            color:red;
-        }
-        span{
-            color: blue;
-        }
-        footer p:first-child span{
-            color: red;
-        }
-        .teacher-info{
-            border: 1px solid black;
-            border-radius: 5px;
-            margin: 10px;
-            width: 400px;
-            box-shadow: 6px 0px 21px -3px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        button{
-            background-color: greenyellow;
-            color: orange;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 5px;
-            border-radius: 5px;
-            border: none;
-            position: fixed;
-            right: 50px;
-            bottom: 40px;
-        }
-        ul{
-            list-style-type: none;
-        }
-        li a{
-            text-decoration: none;
-            color: black;
-            font: size 20px;
-            font-weight: 600;
-        }
-        li a:hover{
-            color: red;
-        }
-        p{
-            font-size: 20px;
-        }
-        h3{
-            font-size: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: underline;
-        }
-        nav li{
-            margin: 10px;
-            padding: 5px;
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-        .teacher-info div:last-child{
-            margin: 50px;
-        }
-        .main-section-content{
-            padding: 20px;
-        }
-        table{
-            margin: auto;
-        }
-        #bestsellers h2{
-            padding: 20px;
-        }
-        ol li{
-            margin-bottom: 20px;
-        }
-        #book-reveiws p,
-        #book-reveiws h3{
-        position: relative;
-        left: 40px; 
-        width: 400px;
-        }
-        footer{
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-        }
-        #videos div{
-            display: flex;
-            justify-content: space-around;
-        }
-        #teachers{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        nav ul{
-            display: flex;
-            justify-content:space-between;
-        }
+        *{
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.parkinsans-<uniquifier> {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+}
+
+body {
+  /* first lesson*/
+  background-color: #eeeeee;
+}
+header {
+  /* first lesson*/
+  background-color: brown;
+
+  /*fifth lesson*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  /* first lesson*/
+  background-color: aquamarine;
+  /*fourth lesson*/
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  /*fifth lesson*/ 
+  display: flex;
+  justify-content: center;
+    
+}
+#intro {
+  /* first lesson*/
+  background-color: lightpink;
+  /*second lesson*/
+  font-family: Arial, Helvetica, sans-serif;
+  /*third lesson*/
+    text-align: center;
+}
+
+.main-section-content h2 {
+  /* first lesson*/
+  background-color: darkkhaki;
+  /*second lesson*/
+  font-family: Arial, Helvetica, sans-serif;
+  /* third lesson*/
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+#bestsellers,
+footer {
+  /* first lesson*/
+  background-color: lightyellow;
+}
+
+header,
+nav,
+#intro,
+#main-section,
+#bestsellers,
+footer {
+  /* first lesson*/
+  border: 1px solid black;
+}
+header,
+nav,
+#main-section {
+  /* first lesson*/
+  border-radius: 10px;
+}
+h1 {
+  /* first lesson*/
+  color: white;
+  /*second lesson*/
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Third Lesson*/
+    margin: 30px;
+}
+h2,
+p {
+  /* first lesson*/
+  color: #333333;
+}
+table,
+th,
+td {
+  /* first lesson*/
+  border: 1px solid black;
+}
+tr:last-child {
+  /* first lesson*/
+  color: red;
+}
+span {
+  /* first lesson*/
+  color: blue;
+}
+footer p:first-child span {
+  /* first lesson*/
+  color: red;
+}
+.teacher-info {
+  /* first lesson*/
+  border-radius: 5px;
+  /*third lesson*/
+  margin: 10px;
+  width: 400px;
+  box-shadow: 6px 0px 21px -3px #333333;
+  /*fifth lesson*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  /*first lesson*/
+  background-color: red;
+  color: white;
+    
+  /*second-lesson*/ 
+  font-size: 20px;
+  font-weight: bold;
+    
+  /*third lesson*/
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+
+  /*fourth lesson*/
+  position: fixed;
+  right: 50px;
+  bottom: 40px;
+}
+
+
+/*second lesson*/
+ul {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: red;
+}
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+/*third lesson*/
+nav li {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.teacher-info div:last-child {
+  margin-left: 50px;
+}
+
+.main-section-content {
+  padding: 20px;
+}
+
+table {
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+footer {
+  padding: 20px;
+  /*fifth lesson*/ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bestsellers h2 {
+    padding: 20px;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+/* fourth lesson*/
+#book-reviews p,
+#book-reviews h3 {
+  position: relative;
+  left: 40%;
+  width: 400px;
+} 
+
+/* fifth lesson */
+
+#videos div{
+  display: flex;
+  justify-content: space-around;
+}
+
+#teachers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+ nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*sixth Lesson*/
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+#intro {
+  grid-area: intro;
+}
+
+#main-section {
+  grid-area: main-section;
+}
+
+#bestsellers {
+  grid-area: bestsellers;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-areas:
+    "header header header header intro"
+    "nav nav nav nav intro"
+    "main-section main-section main-section main-section bestsellers"
+    "footer footer footer footer footer";
+}
+
+
+
+
     </style>
+
 </head>
+
 <body>
-    <!-- heading -->
-     <header>
-        <h1>MT camel book club</h1>
-     </header>
-     <nav>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ONLINE RESOURES</a></li>
-            <li><a href="">READING GROUP</a></li>
-            <li><a href="">CONTANT US</a></li>
-        </ul>
-     </nav>
-     <!-- intro -->
-      <div id="intro">
-        <img src="MM/BOOKYS.jpg" alt="list of books" width="300">
-        <h2>welcome to MT camel book club</h2>
-        <p>the MTCBC is a online web for reader,researcher,E.T.C</p>
-      </div>
-    <!-- CONTENT 1 -->
-     <div id="main-section">
-        <div class="main-section-content">
-            <H2>Meet our teacher</H2>
-            <div id="teachers">
-                <div class="teacher-info">
-                    <div>
-                        <img src="MM/T1.jpg" alt="MR nickson" width="100">
+    <div class="grid-container">
+        <!--Heading-->
+        <header style='background-color: cadetblue; text-align: center; '>
+            <h1 id="header">
+                Mount Caramel Book Club
+            </h1>
+            <div style="border-radius: 100px;">
+
+                <img src="MM/BOOKYS.jpg" alt="Row of books" width="300">
+            </div>
+        </header>
+        <!--navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://idriesshahfoundation.org/books-childrens-books/">Online Resources</a></li>
+                <li><a href="#">Reading Groups</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--Intro-->
+        <div id="intro">
+            <h2>Welcome to Mount Caramel Book Club</h2>
+            <p>The Mount Caramel Book Club is an online community of book readers in Mount Caramel school.</p>
+        </div>
+        <!--Main Section-->
+        <div id="main-section">
+            <!--content-1-->
+            <div class="main-section-content">
+                <h2>Meet our teachers</h2>
+                <div id="teachers">
+                    <div class="teacher-info">
+                        <div>
+                            <img src="MM/T1.jpg" alt="teacher image" width="100">
+                        </div>
+                        <div>
+                            <h3>Ms. Emma</h3>
+                            <p>She teaches elementary school kids. She has a bachelor's degree in Elementary
+                                education
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>HR.nickson</h3>
-                        <P>mr.nickson is a G5 class teacher,he teachs math,science and P.H.E</P>
-                    </div>
-                </div>
-                <div class="teacher-info">
-                    <div>
-                        <img src="MM/T2.jpg" alt="MR nickson" width="100">
-                    </div>
-                    <div>
-                        <h3>HR.mary</h3>
-                        <P>mr.nickson is a G5 class teacher,he teachs math,science and P.H.E</P>
+                    <div class="teacher-info">
+                        <div>
+                            <img src="MM/T2.jpg" alt="teacher image" width="100">
+                        </div>
+                        <div>
+                            <h3>Ms. Caroline</h3>
+                            <p>She teacher secondary school and high school kids. She has a <i>Master's of Arts</i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--content-2-->
+            <div id="book-reviews" class="main-section-content">
+                <h2>Book Reviews</h2>
+                <h3>Alice in the wonderland</h3>
+                <p><strong>Amit: </strong> <q>I loved reading this book. A must read for everyone.</q></p>
+                <p><strong>Sekhar: </strong><q>I really enjoyed reading this book</q></p>
+            </div>
+            <!--content-3-->
+            <div id="videos" class="main-section-content">
+                <h2>Related Videos</h2>
+                <div>
+                    <video width="560" height="315" controls autoplay>
+                        <source src="MM/VIDEO.mp4" type="video/mp4">
+                    </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcWLKRXgjsw"
+                        title="YouTube video player"></iframe>
+                </div>
+            </div>
+            <!--content-4(tables)-->
+            <div class="main-section-content">
+                <h2>Opening Timings</h2>
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>11am - 1pm</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>11am - 1pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-     </div>
-    <!-- CONTENT 2 -->
-     <div class="main-section-content" id="book-reveiws">
-        <h2>book review</h2>
-        <h3>the invisible dog</h3>
-        <p><strong>elisa: </strong> <q>I love the book,it shown me to be honest and to be true to myself</q></p>
-        <p><strong>osongo: </strong> <q>I love the book </q>
-            </p>
-     </div>
-    <!-- this is video section  -->
-     <div class="main-content-section" id="videos">
-        <div>
-            <video controls autoplay width="400" height="220">
-                <source src="MM/VIDEO.mp4" type="video/mp4">
-            </video>
-            <iframe src="https://www.youtube.com/embed/wcWLKRXgjsw" frameborder="0" width="400" height="220"></iframe>
+        <!--Bestseller Section-->
+        <div id="bestsellers">
+            <h2>Best Sellers</h2>
+            <ol>
+                <li><b>The Woman in the Window</b> by <em>A.J.Finn</em></li>
+                <li><b>Stand By Me</b> by <em>S.D.Robertson</em></li>
+                <li><b>One in a Million</b> by <em>Lindsey Kelk</em></li>
+                <li><b>The Secret Wife</b> by <em>Gill Paul</em></li>
+            </ol>
         </div>
-     </div>
-    <!-- CONTENT 3 <table></table> -->
-     <div class="main-section-content">
-        <h2>open timing</h2>
-        <table>
-            <tr>
-                <th>monday</th>
-                <td>11:00AM - 3:00PM</td>
-            </tr>
-            <tr>
-                <th>tuesday</th>
-                <td>11:00AM - 3:00PM</td>
-            </tr>
-            <tr>
-                <th>wednesday</th>
-                <td>11:00AM - 3:00PM</td>
-            </tr>
-            <tr>
-                <th>thusday</th>
-                <td>11:00AM - 3:00PM</td>
-            </tr>
-            <tr>
-                <th>friday</th>
-                <td>11:00AM - 1:00PM</td>
-            </tr>
-            <tr>
-                <th>satarday</th>
-                <td>11:00AM - 1:00PM</td>
-            </tr>
-            <tr>
-                <th>sunday</th>
-                <td>CLOSED</td>
-            </tr>
-            </table>
-     </div>
-    <!-- bestseller section -->
-     <div id="bestsellers">
-        <h2>best seller</h2>
-        <Ol>
-            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-            <li><b>lina loves libary day</b> by <em>david amondi</em><br></li>
-            </Ol>
-     </div>
-    <!-- contact info -->
-     <footer>
-        <p><span>contact us:</span>  king kigen </p>
-        <p><span>phone number:</span> 0777414124</p>
-        <address>kisumu,maboleo</address>
-     </footer>
-     <button>enquiry</button>
+        <footer>
+            <p><span>Contact Us:</span> Mrs. Caroline</p>
+            <p><span>Phone No:</span> +1124533</p>
+            <address>36th Main, Palm Street , Delhi-36035</address>
+        </footer>
+        <!--sixth  lesson-->
+        <button>Enquiry</button>
+    </div>
+</body>
+
 </html>
