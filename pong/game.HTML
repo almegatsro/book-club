@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Color Guessing Game (Infinite Loop)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #23272f;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+        }
+
+        h1 {
+            margin-bottom: 0.5em;
+            letter-spacing: 0.05em;
+        }
+
+        .game {
+            background: #2d323d;
+            padding: 2em 3em;
+            border-radius: 1em;
+            box-shadow: 0 4px 24px #0007;
+            text-align: center;
+            min-width: 320px;
+        }
+
+        .colors {
+            display: flex;
+            gap: 2em;
+            margin: 2em 0;
+            justify-content: center;
+        }
+
+        .color-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            border: 3px solid #fff2;
+            cursor: pointer;
+            transition: transform 0.2s, border 0.2s;
+            box-shadow: 0 2px 12px #0004;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .color-box:hover {
+            transform: scale(1.12);
+            border: 3px solid #fff;
+        }
+
+        /* Hide actual radio inputs */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Feedback styles */
+        .feedback {
+            height: 2.2em;
+            line-height: 2.2em;
+            font-size: 1.3em;
+            margin-bottom: 1em;
+            font-weight: bold;
+            letter-spacing: 0.01em;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        /* Show feedback when an input is checked */
+        #guess1:checked~.feedback[data-feedback="1"],
+        #guess2:checked~.feedback[data-feedback="2"],
+        #guess3:checked~.feedback[data-feedback="3"] {
+            opacity: 1;
+        }
+
+        /* When correct, show green border */
+        #guess2:checked~.colors label[for="guess2"] {
+            outline: 4px solid #31d266;
+            outline-offset: 3px;
+            animation: pop 0.4s;
+        }
+
+        /* When incorrect, show red border */
+        #guess1:checked~.colors label[for="guess1"],
+        #guess3:checked~.colors label[for="guess3"] {
+            outline: 4px solid #e74c3c;
+            outline-offset: 3px;
+            animation: shake 0.4s;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.18);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-6px);
+            }
+
+            40% {
+                transform: translateX(6px);
+            }
+
+            60% {
+                transform: translateX(-4px);
+            }
+
+            80% {
+                transform: translateX(4px);
+            }
+        }
+
+        /* Show 'Play Again' button after a guess */
+        #guess1:checked~.play-again,
+        #guess2:checked~.play-again,
+        #guess3:checked~.play-again {
+            display: inline-block;
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .play-again {
+            display: none;
+            margin-top: 1.5em;
+            background: #23272f;
+            color: #fff;
+            padding: 0.8em 2em;
+            border-radius: 0.7em;
+            border: 2px solid #31d266;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s;
+            text-decoration: none;
+            box-shadow: 0 2px 12px #31d26622;
+        }
+
+        .play-again:hover {
+            background: #31d266;
+            color: #23272f;
+        }
+
+        /* .hide when guessing */
+        #guess1:checked~.colors,
+        #guess2:checked~.colors,
+        #guess3:checked~.colors {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎨 Color Guessing Game</h1>
+    <div class="game">
+        <input type="radio" name="guess" id="guess1" />
+        <input type="radio" name="guess" id="guess2" />
+        <input type="radio" name="guess" id="guess3" />
+        <div class="feedback" data-feedback="1">❌ Oops! Try again…</div>
+        <div class="feedback" data-feedback="2">✅ Correct! Well done!</div>
+        <div class="feedback" data-feedback="3">❌ Oops! Try again…</div>
+        <div class="colors">
+            <label class="color-box" for="guess1" style="background:#e74c3c;"></label>
+            <label class="color-box" for="guess2" style="background:#31d266;"></label>
+            <label class="color-box" for="guess3" style="background:#f1c40f;"></label>
+        </div>
+        <a href="" class="play-again"
+            onclick="document.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false)">🔄 Play Again</a>
+    </div>
+    <p style="opacity:.6;font-size:.95em;margin-top:1em;">(Pick the <b>green</b> color! The game repeats forever.)</p>
+</body>
+
+</html>
