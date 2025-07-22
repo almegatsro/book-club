@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+            </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Slider Example</h1>
+        <div class="form-group">
+            <label for="slider">Adjust the slider:</label>
+            <input type="range" class="form-control-range" id="slider" min="0" max="100" value="50">
+            <p class="mt-2">Value: <span id="sliderValue">50</span></p>
+        </div>
+        <div class="inner">
+            <div class="item active">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fortnite.com%2Fnews%2Fwelcome-to-lego-fortnite&psig=AOvVaw2V1g-xSBJkK1bBFmyKb1YG&ust=1753289594096000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMDn_er20I4DFQAAAAAdAAAAABAE" alt="lego fortnite" style="width: 100%;">
+            </div>
+                        <div class="item active">
+                            <img src="https://www.google.com/imgres?q=lego%20&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F24%2FLEGO_logo.svg%2F640px-LEGO_logo.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLego&docid=FiWwpO8S8lq6yM&tbnid=m3tuHMn221LmwM&vet=12ahUKEwic0t_E99COAxXa5wIHHSdEAMAQM3oECBIQAA..i&w=640&h=640&hcb=2&ved=2ahUKEwic0t_E99COAxXa5wIHHSdEAMAQM3oECBIQAA"
+                                alt="lego" style="width: 100%;">
+                        </div>
+                                    <div class="item active">
+                                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsteamxshop.com%2Fproducts%2Fwedo-2-0-robotics-kit%3Fsrsltid%3DAfmBOoq9DhfvfFXChX5aKtEumnQB6rDm5nggBPyTZkFjGZJVkRQyPBJ1&psig=AOvVaw3tlLSVoBFVYXsThdf7Tugh&ust=1753289830532000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKj24OL30I4DFQAAAAAdAAAAABAU"
+                                            alt="lego wedo 2.0" style="width: 100%;">
+                                    </div>
+        </div>
+        <script>
+            const slider = document.getElementById('slider');
+            const sliderValue = document.getElementById('sliderValue');
+
+            slider.addEventListener('input', function() {
+                sliderValue.textContent = this.value;
+            });
+        </script>
+    </div>
+</body>
+</html>
